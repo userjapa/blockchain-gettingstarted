@@ -1,0 +1,10 @@
+{
+  "name": "blockchain-gettingstarted",
+  "version": "1.0.0",
+  "description": "Blockchain test",
+  "main": "index.js",
+  "repository": "https://github.com/userjapa/blockchain-gettingstarted.git",
+  "author": "userjapa <willian.hsimabukuro@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
