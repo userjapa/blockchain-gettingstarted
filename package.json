@@ -3,8 +3,31 @@
   "version": "1.0.0",
   "description": "Blockchain test",
   "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "dev-test": "nodemon dev-test",
+    "start": "node ./app",
+    "start2": "cross-env HTTP_PORT=3002 P2P_PORT=5002 PEERS=ws://localhost:5001 node ./app",
+    "start3": "cross-env HTTP_PORT=3003 P2P_PORT=5003 PEERS=ws://localhost:5001 node ./app",
+    "start4": "cross-env HTTP_PORT=3004 P2P_PORT=5004 PEERS=ws://localhost:5002 node ./app",
+    "dev": "nodemon ./app"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "repository": "https://github.com/userjapa/blockchain-gettingstarted.git",
   "author": "userjapa <willian.hsimabukuro@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "elliptic": "^6.5.4",
+    "express": "^4.17.3",
+    "uuid": "^8.3.2"
+  }
 }
